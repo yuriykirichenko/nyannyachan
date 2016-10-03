@@ -18,16 +18,15 @@
          <center>
             <Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="439.0" prefWidth="610.0" BorderPane.alignment="CENTER">
                <children>
-                  <CheckBox fx:id="Bitch" layoutX="272.0" layoutY="265.0" mnemonicParsing="false" />
-                  <CheckBox fx:id="Human" layoutX="167.0" layoutY="265.0" mnemonicParsing="false" />
-                  <Label layoutX="188.0" layoutY="260.0" prefHeight="28.0" prefWidth="81.0" text="Human" />
-                  <Label layoutX="297.0" layoutY="265.0" prefHeight="17.0" prefWidth="63.0" text="Bitch" />
-                  <Button fx:id="CheckIn" layoutX="165.0" layoutY="356.0" mnemonicParsing="false" text="Сheck in" />
-                  <TextField fx:id="FirstName" layoutX="167.0" layoutY="76.0" onAction="#selected" prefHeight="25.0" prefWidth="115.0" text="First Name:" />
-                  <TextField fx:id="LastName" layoutX="297.0" layoutY="76.0" onAction="#selected" prefHeight="25.0" prefWidth="121.0" text="Last Name:" />
-                  <TextField fx:id="EMail" layoutX="167.0" layoutY="118.0" onAction="#selected" prefHeight="25.0" prefWidth="253.0" text="E-mail:" />
-                  <TextField fx:id="Nickname" layoutX="167.0" layoutY="166.0" onAction="#selected" text="Nickname:" />
-                  <TextField fx:id="Password" layoutX="168.0" layoutY="212.0" onAction="#selected" prefHeight="25.0" prefWidth="185.0" text="Password:" />
+                  <CheckBox fx:id="Bitch" layoutX="273.0" layoutY="266.0" mnemonicParsing="false" onAction="#maleCheck" />
+                  <CheckBox fx:id="Human" layoutX="174.0" layoutY="265.0" mnemonicParsing="false" onAction="#maleCheck" />
+                  <Label layoutX="195.0" layoutY="260.0" prefHeight="28.0" prefWidth="81.0" text="Human" />
+                  <Label layoutX="298.0" layoutY="266.0" prefHeight="17.0" prefWidth="63.0" text="Bitch" />
+                  <Button fx:id="CheckIn" layoutX="167.0" layoutY="355.0" mnemonicParsing="false" text="Сheck in" />
+                  <TextField fx:id="FirstName" layoutX="167.0" layoutY="76.0" prefHeight="25.0" prefWidth="115.0" />
+                  <TextField fx:id="LastName" layoutX="297.0" layoutY="76.0" prefHeight="25.0" prefWidth="121.0" />
+                  <TextField fx:id="EMail" layoutX="167.0" layoutY="118.0" prefHeight="25.0" prefWidth="253.0" />
+                  <TextField fx:id="Nickname" layoutX="167.0" layoutY="166.0" />
                   <Label layoutX="14.0" layoutY="417.0" prefHeight="17.0" prefWidth="86.0" text="K&amp;K © 2016">
                      <font>
                         <Font name="Calibri" size="10.0" />
@@ -37,9 +36,15 @@
                   <Label layoutX="368.0" layoutY="216.0" prefHeight="17.0" prefWidth="23.0" />
                   <Label layoutX="329.0" layoutY="166.0" prefHeight="23.0" prefWidth="28.0" />
                   <Label layoutX="432.0" layoutY="119.0" prefHeight="23.0" prefWidth="28.0" />
-                  <Hyperlink layoutX="188.0" layoutY="300.0" prefHeight="23.0" prefWidth="228.0" text="The agreement with the rules of bitching" />
-                  <CheckBox fx:id="AgreeRules" layoutX="165.0" layoutY="303.0" mnemonicParsing="false" />
-                  <Button fx:id="Exit" layoutX="256.0" layoutY="356.0" mnemonicParsing="false" onAction="#doExit" prefHeight="25.0" prefWidth="61.0" text="Exit" />
+                  <Hyperlink layoutX="196.0" layoutY="302.0" prefHeight="23.0" prefWidth="228.0" text="The agreement with the rules of bitching" />
+                  <CheckBox fx:id="AgreeRules" layoutX="173.0" layoutY="305.0" mnemonicParsing="false" />
+                  <Button fx:id="Exit" layoutX="267.0" layoutY="355.0" mnemonicParsing="false" onAction="#doExit" prefHeight="25.0" prefWidth="61.0" text="Exit" />
+                  <Label layoutX="174.0" layoutY="59.0" text="First Name:" />
+                  <Label layoutX="303.0" layoutY="59.0" text="Last Name:" />
+                  <Label layoutX="174.0" layoutY="101.0" text="E-mail:" />
+                  <Label layoutX="174.0" layoutY="149.0" text="Nickname:" />
+                  <Label layoutX="174.0" layoutY="195.0" text="Password:" />
+                  <PasswordField layoutX="167.0" layoutY="212.0" />
                </children>
             </Pane>
          </center>

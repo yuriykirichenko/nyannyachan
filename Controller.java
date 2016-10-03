@@ -6,10 +6,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
-
-import java.awt.event.ActionListener;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
 
 public class Controller{
+
     @FXML
     private TextField FirstName;
     @FXML
@@ -31,14 +32,22 @@ public class Controller{
     @FXML
     private Button Exit;
 
-    @FXML public void doExit(ActionEvent event) {
-        Platform.exit(); // коректне завершення застосунку JavaFX
+    @FXML
+    public void doExit(ActionEvent event) {
+        Platform.exit();
     }
 
     @FXML
-    private void selected(ActionEvent event){
-        if(FirstName.getText() == "First Name:"){
-            FirstName.setText(" ");
-        }
+    public void maleCheck(ActionEvent event){
+        if(Human.isFocused())
+            Bitch.setSelected(false);
+        if(Bitch.isFocused())
+            Human.setSelected(false);
+
+    }
+
+    @FXML
+    public void checkIn(ActionEvent event){
+
     }
 }
